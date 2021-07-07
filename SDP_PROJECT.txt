@@ -1,0 +1,219 @@
+> use Travel_tourism_hospitality;
+switched to db Travel_tourism_hospitality
+> db.createCollection("Customer");
+{ "ok" : 1 }
+>
+db.Customer.insert({Cus_id:1,Cus_name:"Raju",Cus_pno:9999119991,Cus_add:"Guntur"
+});
+WriteResult({ "nInserted" : 1 })
+>
+db.Customer.insert({Cus_id:2,Cus_name:"Rani",Cus_pno:9999117993,Cus_add:"Vijayaw
+ada"});
+WriteResult({ "nInserted" : 1 })
+>
+db.Customer.insert({Cus_id:3,Cus_name:"Gopal",Cus_pno:9229117993,Cus_add:"Tenali
+"});
+WriteResult({ "nInserted" : 1 })
+>
+db.Customer.insert({Cus_id:4,Cus_name:"Mahipal",Cus_pno:9229114443,Cus_add:"Tull
+ur"});
+WriteResult({ "nInserted" : 1 })
+>
+db.Customer.insert({Cus_id:5,Cus_name:"Sravanthi",Cus_pno:9266614443,Cus_add:"Re
+vendrapadu"});
+WriteResult({ "nInserted" : 1 })
+>
+db.Customer.insert({Cus_id:6,Cus_name:"Sravani",Cus_pno:9266783453,Cus_add:"Hyde
+rabad"});
+WriteResult({ "nInserted" : 1 })
+>
+db.Customer.insert({Cus_id:7,Cus_name:"Rahul",Cus_pno:9266743253,Cus_add:"Nellor
+e"});
+WriteResult({ "nInserted" : 1 })
+>
+db.Customer.insert({Cus_id:8,Cus_name:"Revanth",Cus_pno:9266567853,Cus_add:"Gunt
+ur"});
+WriteResult({ "nInserted" : 1 })
+>
+db.Customer.insert({Cus_id:9,Cus_name:"Revathi",Cus_pno:9266543253,Cus_add:"Tena
+li"});
+WriteResult({ "nInserted" : 1 })
+>
+db.Customer.insert({Cus_id:10,Cus_name:"Ram",Cus_pno:9266672453,Cus_add:"Hyderab
+ad"});
+WriteResult({ "nInserted" : 1 })
+> db.Customer.find();
+{ "_id" : ObjectId("5f9c48e8190aa8a0a279dd88"), "Cus_id" : 1, "Cus_name" :
+"Raju", "Cus_pno" : 9999119991, "Cus_add" : "Guntur" }
+{ "_id" : ObjectId("5f9c4b19190aa8a0a279dd89"), "Cus_id" : 1, "Cus_name" :
+"Raju", "Cus_pno" : 9999119991, "Cus_add" : "Guntur" }
+{ "_id" : ObjectId("5f9c4c3e190aa8a0a279dd8a"), "Cus_id" : 2, "Cus_name" :
+"Rani", "Cus_pno" : 9999117993, "Cus_add" : "Vijayawada" }
+{ "_id" : ObjectId("5f9c4c99190aa8a0a279dd8b"), "Cus_id" : 3, "Cus_name" :
+"Gopal", "Cus_pno" : 9229117993, "Cus_add" : "Tenali" }
+{ "_id" : ObjectId("5f9c4cfb190aa8a0a279dd8c"), "Cus_id" : 4, "Cus_name" :
+"Mahipal", "Cus_pno" : 9229114443, "Cus_add" : "Tullur" }
+{ "_id" : ObjectId("5f9c4d35190aa8a0a279dd8d"), "Cus_id" : 5, "Cus_name" :
+"Sravanthi", "Cus_pno" : 9266614443, "Cus_add" : "Revendrapadu" }
+{ "_id" : ObjectId("5f9c4d68190aa8a0a279dd8e"), "Cus_id" : 6, "Cus_name" :
+"Sravani", "Cus_pno" : 9266783453, "Cus_add" : "Hyderabad" }
+{ "_id" : ObjectId("5f9c4da6190aa8a0a279dd8f"), "Cus_id" : 7, "Cus_name" :
+"Rahul", "Cus_pno" : 9266743253, "Cus_add" : "Nellore" }
+{ "_id" : ObjectId("5f9c4e02190aa8a0a279dd90"), "Cus_id" : 8, "Cus_name" :
+"Revanth", "Cus_pno" : 9266567853, "Cus_add" : "Guntur" }
+{ "_id" : ObjectId("5f9c4e27190aa8a0a279dd91"), "Cus_id" : 9, "Cus_name" :
+"Revathi", "Cus_pno" : 9266543253, "Cus_add" : "Tenali" }
+{ "_id" : ObjectId("5f9c4e4c190aa8a0a279dd92"), "Cus_id" : 10, "Cus_name" :
+"Ram", "Cus_pno" : 9266672453, "Cus_add" : "Hyderabad" }
+>
+> db.createCollection("Transportation");
+{ "ok" : 1 }
+> db.Transportation.insert({"Cus_id":1,"Cus_name":"Raju","From-To":"GunturVysag"});
+WriteResult({ "nInserted" : 1 })
+> db.Transportation.insert({"Cus_id":2,"Cus_name":"Rani","From-To":"GunturKolkata"});
+WriteResult({ "nInserted" : 1 })
+> db.Transportation.insert({"Cus_id":3,"Cus_name":"Gopal","From-To":"TenaliAgra"});
+WriteResult({ "nInserted" : 1 })
+> db.Transportation.insert({"Cus_id":4,"Cus_name":"Mahipal","From-To":"TullurHyderabad"});
+WriteResult({ "nInserted" : 1 })
+> db.Transportation.insert({"Cus_id":5,"Cus_name":"Sravanthi","FromTo":"Revendrapadu-Nellore"});
+WriteResult({ "nInserted" : 1 })
+> db.Transportation.insert({"Cus_id":6,"Cus_name":"Sravani","FromTo":"Hyderabad-Guntur"});
+WriteResult({ "nInserted" : 1 })
+> db.Transportation.insert({"Cus_id":7,"Cus_name":"Rahul","From-To":"NelloreDelhi"});
+WriteResult({ "nInserted" : 1 })
+> db.Transportation.insert({"Cus_id":8,"Cus_name":"Revanth","From-To":"GunturMumbai"});
+WriteResult({ "nInserted" : 1 })
+> db.Transportation.insert({"Cus_id":9,"Cus_name":"Revathi",Cus_add:"TenaliPune"});
+WriteResult({ "nInserted" : 1 })
+> db.Transpotation.insert({"Cus_id":10,"Cus_name":"Ram","From-To":"HyderabadVijayawada"});
+WriteResult({ "nInserted" : 1 })
+> db.Transportation.find();
+{ "_id" : ObjectId("5f9c5b83190aa8a0a279dd9d"), "Cus_id" : 1, "Cus_name" :
+"Raju", "From-To" : "Guntur-Vysag" }
+{ "_id" : ObjectId("5f9c5c66190aa8a0a279dd9e"), "Cus_id" : 2, "Cus_name" :
+"Rani", "From-To" : "Guntur-Kolkata" }
+{ "_id" : ObjectId("5f9c5c84190aa8a0a279dd9f"), "Cus_id" : 3, "Cus_name" :
+"Gopal", "From-To" : "Tenali-Agra" }
+{ "_id" : ObjectId("5f9c5c9e190aa8a0a279dda0"), "Cus_id" : 4, "Cus_name" :
+"Mahipal", "From-To" : "Tullur-Hyderabad" }
+{ "_id" : ObjectId("5f9c5cc9190aa8a0a279dda1"), "Cus_id" : 5, "Cus_name" :
+"Sravanthi", "From-To" : "Revendrapadu-Nellore" }
+{ "_id" : ObjectId("5f9c5ce3190aa8a0a279dda2"), "Cus_id" : 6, "Cus_name" :
+"Sravani", "From-To" : "Hyderabad-Guntur" }
+{ "_id" : ObjectId("5f9c5cff190aa8a0a279dda3"), "Cus_id" : 7, "Cus_name" :
+"Rahul", "From-To" : "Nellore-Delhi" }
+{ "_id" : ObjectId("5f9c5d16190aa8a0a279dda4"), "Cus_id" : 8, "Cus_name" :
+"Revanth", "From-To" : "Guntur-Mumbai" }
+{ "_id" : ObjectId("5f9c5d33190aa8a0a279dda5"), "Cus_id" : 9, "Cus_name" :
+"Revathi", "Cus_add" : "Tenali-Pune" }
+{ "_id" : ObjectId("5f9c621f190aa8a0a279ddb1"), "Cus_id" : 10, "Cus_name" :
+"Ram", "From-To" : "Hyderabad-Vijayawada" }
+>
+ db.createCollection("Travelling Mode");
+{ "ok" : 1 }
+> db.TravellingMode.insert({"Cus_id":1,"Cus_name":"Raju","From-To":"GunturVysag","Travelling_Mode":"Train"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.insert({"Cus_id":2,"Cus_name":"Rani","From-To":"GunturKolkata","Travelling_Mode":"Flight"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.insert({"Cus_id":3,"Cus_name":"Gopal","From-To":"TenaliAgra","Travelling_Mode":"Flight"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.insert({"Cus_id":4,"Cus_name":"Mahipal","From-To":"TullurHyderabad","Travelling_Mode":"Bus"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.insert({"Cus_id":5,"Cus_name":"Sravanthi","FromTo":"Revendrapadu-Nellore","Travelling_Mode":"Car"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.insert({"Cus_id":6,"Cus_name":"Sravani","FromTo":"Hyderabad-Guntur","Travelling_Mode":"Train"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.insert({"Cus_id":7,"Cus_name":"Rahul","From-To":"NelloreDelhi","Travelling_Mode":"Flight"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.insert({"Cus_id":8,"Cus_name":"Revanth","From-To":"GunturMumbai","Travelling_Mode":"Train"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.insert({"Cus_id":9,"Cus_name":"Revathi",Cus_add:"TenaliPune","Travelling_Mode":"Flight"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.insert({"Cus_id":10,"Cus_name":"Ram","From-To":"HyderabadVijayawada","Travelling_Mode":"Car"});
+WriteResult({ "nInserted" : 1 })
+> db.TravellingMode.find();
+{ "_id" : ObjectId("5f9c5efa190aa8a0a279dda7"), "Cus_id" : 1, "Cus_name" :
+"Raju", "From-To" : "Guntur-Vysag", "Travelling_Mode" : "Train" }
+{ "_id" : ObjectId("5f9c5f3e190aa8a0a279dda8"), "Cus_id" : 2, "Cus_name" :
+"Rani", "From-To" : "Guntur-Kolkata", "Travelling_Mode" : "Flight" }
+{ "_id" : ObjectId("5f9c5f86190aa8a0a279dda9"), "Cus_id" : 3, "Cus_name" :
+"Gopal", "From-To" : "Tenali-Agra", "Travelling_Mode" : "Flight" }
+{ "_id" : ObjectId("5f9c5fc9190aa8a0a279ddaa"), "Cus_id" : 4, "Cus_name" :
+"Mahipal", "From-To" : "Tullur-Hyderabad", "Travelling_Mode" : "Bus" }
+{ "_id" : ObjectId("5f9c6008190aa8a0a279ddab"), "Cus_id" : 5, "Cus_name" :
+"Sravanthi", "From-To" : "Revendrapadu-Nellore", "Travelling_Mode" : "Car" }
+{ "_id" : ObjectId("5f9c6097190aa8a0a279ddac"), "Cus_id" : 6, "Cus_name" :
+"Sravani", "From-To" : "Hyderabad-Guntur", "Travelling_Mode" : "Train" }
+{ "_id" : ObjectId("5f9c60d3190aa8a0a279ddad"), "Cus_id" : 7, "Cus_name" :
+"Rahul", "From-To" : "Nellore-Delhi", "Travelling_Mode" : "Flight" }
+{ "_id" : ObjectId("5f9c610a190aa8a0a279ddae"), "Cus_id" : 8, "Cus_name" :
+"Revanth", "From-To" : "Guntur-Mumbai", "Travelling_Mode" : "Train" }
+{ "_id" : ObjectId("5f9c6141190aa8a0a279ddaf"), "Cus_id" : 9, "Cus_name" :
+"Revathi", "Cus_add" : "Tenali-Pune", "Travelling_Mode" : "Flight" }
+{ "_id" : ObjectId("5f9c617c190aa8a0a279ddb0"), "Cus_id" : 10, "Cus_name" :
+"Ram", "From-To" : "Hyderabad-Vijayawada", "Travelling_Mode" : "Car" }
+>
+> db.createCollection("Billing");
+{ "ok" : 1 }
+> db.Billing.insert({"Cus_id":1,"Cus_name":"Raju","From-To":"GunturVysag","Travelling_Mode":"Train","Total_Amount":2000,"Payment_mode":"Online
+Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.insert({"Cus_id":2,"Cus_name":"Rani","From-To":"GunturKolkata","Travelling_Mode":"Flight","Toatal_Amount":15000,"Payment_mode":"Online
+Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.insert({"Cus_id":3,"Cus_name":"Gopal","From-To":"TenaliAgra","Travelling_Mode":"Flight","Total_Amount":18500,"Payment_mode":"Online
+Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.insert({"Cus_id":4,"Cus_name":"Mahipal","From-To":"TullurHyderabad","Travelling_Mode":"Bus","Total_Amount":600,"Payment_mode":"Online
+Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.insert({"Cus_id":5,"Cus_name":"Sravanthi","From-To":"RevendrapaduNellore","Travelling_Mode":"Car","Total_Amount":3000,"Payment_mode":"Online
+Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.insert({"Cus_id":6,"Cus_name":"Sravani","From-To":"HyderabadGuntur","Travelling_Mode":"Train","Total_Amount":1100,"Payment_mode":"Online
+Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.insert({"Cus_id":7,"Cus_name":"Rahul","From-To":"NelloreDelhi","Travelling_Mode":"Flight","Total_Amount":15500,"Payment_mode":"Online
+Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.insert({"Cus_id":8,"Cus_name":"Revanth","From-To":"GunturMumbai","Travelling_Mode":"Train","Total_Amount":2550,"Payment_mode":"Online
+Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.insert({"Cus_id":9,"Cus_name":"Revathi",Cus_add:"TenaliPune","Travelling_Mode":"Flight","Total_Amount":16000,"Payment_mode":"Online
+Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.insert({"Cus_id":10,"Cus_name":"Ram","From-To":"HyderabadVijayawada","Total_Amount":1250,"Payment_mode":"Online Banking"});
+WriteResult({ "nInserted" : 1 })
+> db.Billing.find();
+{ "_id" : ObjectId("5f9c637d190aa8a0a279ddb2"), "Cus_id" : 1, "Cus_name" :
+"Raju", "From-To" : "Guntur-Vysag", "Travelling_Mode" : "Train",
+"Total_Amount" : 2000, "Payment_mode" : "Online Banking" }
+{ "_id" : ObjectId("5f9c63eb190aa8a0a279ddb3"), "Cus_id" : 2, "Cus_name" :
+"Rani", "From-To" : "Guntur-Kolkata", "Travelling_Mode" : "Flight",
+"Toatal_Amount" : 15000, "Payment_mode" : "Online Banking" }
+{ "_id" : ObjectId("5f9c6444190aa8a0a279ddb4"), "Cus_id" : 3, "Cus_name" :
+"Gopal", "From-To" : "Tenali-Agra", "Travelling_Mode" : "Flight", "Total_Amount"
+: 18500, "Payment_mode" : "Online Banking" }
+{ "_id" : ObjectId("5f9c6580190aa8a0a279ddb6"), "Cus_id" : 4, "Cus_name" :
+"Mahipal", "From-To" : "Tullur-Hyderabad", "Travelling_Mode" : "Bus",
+"Total_Amount" : 600, "Payment_mode" : "Online Banking" }
+{ "_id" : ObjectId("5f9c65d9190aa8a0a279ddb7"), "Cus_id" : 5, "Cus_name" :
+"Sravanthi", "From-To" : "Revendrapadu-Nellore", "Travelling_Mode" : "Car",
+"Total_Amount" : 3000, "Payment_mode" : "Online Banking" }
+{ "_id" : ObjectId("5f9c6639190aa8a0a279ddb8"), "Cus_id" : 6, "Cus_name" :
+"Sravani", "From-To" : "Hyderabad-Guntur", "Travelling_Mode" : "Train",
+"Total_Amount" : 1100, "Payment_mode" : "Online Banking" }
+{ "_id" : ObjectId("5f9c6696190aa8a0a279ddb9"), "Cus_id" : 7, "Cus_name" :
+"Rahul", "From-To" : "Nellore-Delhi", "Travelling_Mode" : "Flight",
+"Total_Amount" : 15500, "Payment_mode" : "Online Banking" }
+{ "_id" : ObjectId("5f9c66f3190aa8a0a279ddba"), "Cus_id" : 8, "Cus_name" :
+"Revanth", "From-To" : "Guntur-Mumbai", "Travelling_Mode" : "Train",
+"Total_Amount" : 2550, "Payment_mode" : "Online Banking" }
+{ "_id" : ObjectId("5f9c6749190aa8a0a279ddbb"), "Cus_id" : 9, "Cus_name" :
+"Revathi", "Cus_add" : "Tenali-Pune", "Travelling_Mode" : "Flight",
+"Total_Amount" : 16000, "Payment_mode" : "Online Banking" }
+{ "_id" : ObjectId("5f9c679f190aa8a0a279ddbc"), "Cus_id" : 10, "Cus_name" :
+"Ram", "From-To" : "Hyderabad-Vijayawada", "Total_Amount" : 1250, "Payment_mode"
+: "Online Banking" }
+>

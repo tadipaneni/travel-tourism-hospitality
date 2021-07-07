@@ -1,0 +1,17 @@
+As a technical support manager
+  -I want to be able to upload the FAQ files by just pointing at a link so I don't have to assemble a word doc
+  -I want to be able to tell the bot to use a specific greeting so that I can meet brand standards
+  -I want to be able to have the bot search a pre-exisiting DB so i don't have to use/learn Mongo
+  -I want the bot to be able to check to make sure that the customer's account is valid and in good standing
+ 
+As a non-technical manager
+  -I want to be able to upload FAQ files in a word doc so I don't have to find and create web based FAQs
+  -I want the bot to be able to check to make sure that the customer's account is valid and in good standing
+  -I want the management interface to be as simple as possible so i don't have to guess what to do
+  -I want the bot to immediately turn over to a human operator if the customer gets upset or their question cannot be answered.
+  
+As a customer
+  -I want to be able to get the answer I need as quickly as possible so that I don't have to wade through FAQs on my own
+  -I want the bot to be sophisticated enough as if I were talking to a live human being so that I don't get frustrated
+  -I want to chat with the bot in a way that I am accustomed to, like within an instant/direct message or SMS, so that I feel comfortable using the bot
+  

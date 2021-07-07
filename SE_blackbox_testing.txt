@@ -1,0 +1,40 @@
+Black Box Testing:
+
+Black Box Testing is software testing technique in which internal structure, design and coding
+of software are tested to verify flow of input-output and to improve design, usability and
+security. In white box testing, code is visible to testers so it is also called Clear box testing, Open
+box testing, Transparent box testing, Code-based testing and Glass box testing.
+It is one of two parts of the Box Testing approach to software testing. Its counterpart, Blackbox
+testing, involves testing from an external or end-user type perspective. On the other hand,
+Whitebox testing is based on the inner workings of an application and revolves around internal
+testing.
+Step1: Since it is available to users we have to understand the code.
+Step2: Testing the test cases, and checking if all the buttons are working or not.
+Step3: Unit testing and testing for memory leaks.
+Step4: Updating backend, front end codes.
+In our Module1: Main page
+All the buttons are working and leading to the home page we designed.
+In our Module2: Home page
+All the links leading to login, register, events are working
+There are no buttons in this page.
+Respective links are working leading to the respective pages made using html components.
+In our Module3: Sign-in Page
+Links going the home page are working
+The page is taking the username in the correct format i.e. in alphabets
+Email is taking the format of for gmail.com
+Password is not visible
+The submit button is working and leading to the database storage
+In our Module4: Sign-up page
+Links going the sign in page are working
+The page is taking the username in the correct format i.e. in alphabets
+Email is taking the format of for gmail.com
+Password is not visible
+The page is taking the first name in the correct format i.e. in alphabets
+The page is taking the last name in the correct format i.e. in alphabets
+The submit button is working and leading to the database storage
+In our Module5: Events page
+Links going to the home page are working
+The page is taking the budjet in the correct format i.e. in numbers
+The page is taking the people in the correct format i.e. in numbers
+The page is taking the venue in the correct format i.e. in numbers, alphabets and symbols.
+The submit button is working and leading to the database storage

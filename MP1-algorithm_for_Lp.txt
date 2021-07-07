@@ -1,0 +1,13 @@
+Formulating linear programming models :
+
+Given a precise statement of a linear programming problem, including a speci?ed purpose and any appropriate data and assumptions, the problem may be formulated as a linear programming model as follows:
+	(a) Identify the objective of the model (for example maximizing pro?t or minimizing cost) and decide on the units in which the objective function is to be measured (for example units of currency).
+	 (b) Identify the variables and decide on the units in which each is to be measured.
+	 (c) Identify the constraints and parameters for the problem. 
+	(d) Assign algebraic symbols to the objective function (usually z) and to the variables (usually x_1 ?,x?_2 ?,……..x?_n), and write down precise de?nitions, including units of measurement, for all of these. If necessary, assign algebraic symbols to the parameters as well. 
+	(e) Using a table of parameter values or otherwise, identify the linear relationships between the objective function and the variables and between the constraints and the variables, being careful to use consistent units when identifying these relationships
+	(f) Write down the objective of the problem in the form optimize  z=c_1 x_1+c_2 x_2+?…….+c?_n x_n
+	 (g) Write down the non-trivial constraints where the ?th non-trivial constraint is a linear relationship of one of the following forms: 
+ 
+	(h) Write down the non-negativity or trivial constraints xj> 0 (j = 1,2,...,n).
+
